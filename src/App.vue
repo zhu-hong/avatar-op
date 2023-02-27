@@ -25,8 +25,8 @@ const onChange = (e: Event | any) => {
     img.addEventListener('load', () => {
       const wPs = ps.value
 
-      const tWidth = width.value * 0.0393701 * 300
-      const tHeight = height.value * 0.0393701 * 300
+      const tWidth = width.value
+      const tHeight = height.value
     
       wPs!.width = tWidth
       wPs!.height = tHeight
@@ -52,12 +52,12 @@ const onChange = (e: Event | any) => {
     <div>
       <label>宽:</label>
       <input type="text" v-model.number="width">
-      <span>mm</span>
+      <span>px</span>
     </div>
     <div>
       <label>高:</label>
       <input type="text" v-model.number="height">
-      <span>mm</span>
+      <span>px</span>
     </div>
     <div>
       <label>文件名:</label>
